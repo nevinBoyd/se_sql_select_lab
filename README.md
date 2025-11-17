@@ -176,3 +176,20 @@ df_day_month_year = None
 ```python
 conn.close()
 ```
+
+---
+
+## Developer Notes
+
+This lab helped me get more comfortable connecting Python to a SQL database and write basic queries to retrieve and transform data. I used `sqlite3` for the connection and `pd.read_sql()` to return results as DataFrames, then validated with `pytest`.
+
+A few things I learned and practiced here:
+
+- Selecting specific columns instead of `SELECT *`
+- Using aliases to make results easier to read (`AS`)
+- Creating columns with SQL functions like `LENGTH`, `SUBSTR`, `ROUND`
+- Applying conditional logic with `CASE`
+- Debugging SQL syntax issues and reading error messages correctly
+- Running tests frequently while developing
+
+All steps from the instructions were completed successfully, and `pytest` confirmed correct outputs. This lab improved my understanding on how SQL and Pandas work together, and how to structure database queries inside Python.
